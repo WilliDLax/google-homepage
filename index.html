@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<style>
+    .search-grid{
+        display: grid;
+        grid-template: 1fr 1fr/ 10% 90%; 
+    }
+    .zero-border{
+        border-style: none;
+    }
+    .border{
+        border-style:solid;
+        border-color: gray;
+    }
+    .center{
+        align-self: center;
+    }
+</style>
+
 <html>
-    <h1> Chisom</h1>
+    <head>
+        <title>Google-homepage</title>
+    </head>
+    <body>
+        <div class="center">
+            <img src="google-logo.png" alt="google's logo">
+            <br>
+            <div class="search-grid border" >
+                <img src="search.ico" alt="a cearch icon">
+                <input class="zero-border" type="text">
+            </div>
+        </div>
+    </body>
 </html>
