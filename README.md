@@ -1,2 +1,2 @@
 Creating a google homepage to show html and css
-My first page
+I will try to use divs, headers and footers
