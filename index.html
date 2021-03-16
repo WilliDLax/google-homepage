@@ -4,6 +4,9 @@
     li{
         float: right;
     }
+    .list-left{
+        float: left;
+    }
     li a,button{
         display: block;
         font-family: sans-serif;
@@ -17,6 +20,12 @@
         padding:0;
         margin:0;
         overflow: hidden;
+    }
+
+    footer{
+        width: 100%;
+        position: absolute;
+        top: 93%;
     }
 
     #big-container{
@@ -41,33 +50,45 @@
         display: flex;
     }
 
+    #sign-up-button{
+        background-color: rgb(9, 114, 201);
+        color: white;
+        padding: 9px 9px;
+        border-style: none;
+        border-radius:7px;
+        margin-left: 3px;
+    }
+
     .search-button{
+        border-style:solid;
+        border-width: 1px;
         background: transparent;
-        height: 40px;
+        height: auto;
         border-right: none;
         border-radius: 100px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         outline: none;
         align-self: center;
-        border-color: grey;
+        border-color: #c2b9b9;
     }
 
     #mini-icon{
         width: 20px;
         height: 20px;
-        object-fit: cover;
     }
 
     #text-area{
+        border-width: 1px;
+        border-style: solid;
         width: 500px;
-        height: 40px;
+        height: auto;
         border-left: none;
         outline: none;
         border-radius: 100px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-color: grey;
+        border-color: #c2b9b9;
     }
 </style>
 
@@ -77,8 +98,8 @@
     </head>
 
     <body> 
-        <ul class="navigate">
-            <li><button>sign up</button></li>
+        <ul>
+            <li><button id="sign-up-button">sign up</button></li>
             <li><a href="#">Images</a></li>
             <li><a href="#">Gmail</a></li>
         </ul>
@@ -95,5 +116,18 @@
                 </form>
             </div>
         </div>
+
+        <footer>
+            <ul>
+                <li class="list-left"><a href="#">About</a></li>
+                <li class="list-left"><a href="#">Adverstising</a></li>
+                <li class="list-left"><a href="#">Business</a></li>
+                <li class="list-left"><a href="#">How search works</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </footer>
+
     </body>
 </html>
