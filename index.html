@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <style>
-    .search-grid{
-        display: grid;
-        grid-template: 1fr 1fr/ 10% 90%; 
+    li{
+        float: right;
     }
-    .zero-border{
-        border-style: none;
+    li a{
+        display:block;
+        padding: 5px;
+        
     }
-    .border{
-        border-style:solid;
-        border-color: gray;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
     }
-    .center{
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    body .main-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+    }
+
+    body .google-logo{
         align-self: center;
+    }
+
+    body .search-box{
+        display: flex;
+    }
+
+    .search-button{
+        background: transparent;
+        height: 40px;
+        border-right: none;
+        border-radius: 100px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        outline: none;
+        align-self: center;
+        border-color: grey;
+    }
+
+    #mini-icon{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    #text-area{
+        width: 500px;
+        height: 40px;
+        border-left: none;
+        outline: none;
+        border-radius: 100px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-color: grey;
     }
 </style>
 
@@ -20,14 +71,22 @@
     <head>
         <title>Google-homepage</title>
     </head>
-    <body>
-        <div class="center">
-            <img src="google-logo.png" alt="google's logo">
+    <header>
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+        </ul>
+    </header>
+    <body> 
+        <div class="main-container">
+            <img class="google-logo" src="google-logo.png" alt="google's logo">
             <br>
-            <div class="search-grid border" >
-                <img src="search.ico" alt="a cearch icon">
-                <input class="zero-border" type="text">
-            </div>
+              <form class="search-box" action="/" >
+                  <button class="search-button">
+                    <img id="mini-icon" src="search.ico" alt="search icon">
+                 </button>
+                 <input id="text-area" type="search">
+             </form>
         </div>
     </body>
 </html>
