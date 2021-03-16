@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <style>
+
     li{
         float: right;
     }
-    li a{
-        display:block;
-        padding: 5px;
-        
+    li a,button{
+        display: block;
+        font-family: sans-serif;
+        color: rgb(56, 50, 50);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
     ul{
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        padding:0;
+        margin:0;
         overflow: hidden;
     }
 
-    body{
+    #big-container{
         display: flex;
         justify-content: center;
     }
 
-    body .main-container{
+    #main-container{
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -29,11 +33,11 @@
         top: 100px;
     }
 
-    body .google-logo{
+    .google-logo{
         align-self: center;
     }
 
-    body .search-box{
+    .search-box{
         display: flex;
     }
 
@@ -71,22 +75,25 @@
     <head>
         <title>Google-homepage</title>
     </head>
-    <header>
-        <ul>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-        </ul>
-    </header>
+
     <body> 
-        <div class="main-container">
-            <img class="google-logo" src="google-logo.png" alt="google's logo">
-            <br>
-              <form class="search-box" action="/" >
-                  <button class="search-button">
-                    <img id="mini-icon" src="search.ico" alt="search icon">
-                 </button>
-                 <input id="text-area" type="search">
-             </form>
+        <ul class="navigate">
+            <li><button>sign up</button></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Gmail</a></li>
+        </ul>
+
+        <div id="big-container">
+            <div id="main-container">
+                <img class="google-logo" src="google-logo.png" alt="google's logo">
+                <br>
+                <form class="search-box" action="/" >
+                    <button class="search-button">
+                        <img id="mini-icon" src="search.ico" alt="search icon">
+                    </button>
+                    <input id="text-area" type="search">
+                </form>
+            </div>
         </div>
     </body>
 </html>
