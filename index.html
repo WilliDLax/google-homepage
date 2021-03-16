@@ -37,9 +37,27 @@
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 200px;
+        height: 300px;
         position: absolute;
-        top: 100px;
+        top: 35px;
+    }
+
+    #button-container{
+        display:flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #google-search-button{
+        background: transparent;
+        border-radius: 5px;
+        border-style:hidden;
+    }
+
+    #fun-button{
+        background: transparent;
+        border-radius: 5px;
+        border-style: hidden;
     }
 
     .google-logo{
@@ -107,13 +125,18 @@
         <div id="big-container">
             <div id="main-container">
                 <img class="google-logo" src="google-logo.png" alt="google's logo">
-                <br>
+                
                 <form class="search-box" action="/" >
                     <button class="search-button">
                         <img id="mini-icon" src="search.ico" alt="search icon">
                     </button>
                     <input id="text-area" type="search">
                 </form>
+                
+                <div id="button-container">
+                    <button id="google-search-button">Google Search</button>
+                    <button id="fun-button">I'm feeling Lucky</button>
+                </div>
             </div>
         </div>
 
